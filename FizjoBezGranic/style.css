@@ -204,23 +204,6 @@ b{ font-weight: 700; color:#fff; }
 }
 .mini li{ margin: 7px 0; }
 
-/* GÓRA: 1 (tekst) + 2 (zdjęcie) */
-.layout-top{
-  display:grid;
-  grid-template-columns: 1.55fr 1fr;
-  gap: 14px;
-  align-items: start;
-  margin-bottom: 14px;
-}
-
-/* DÓŁ: 3/4/5 w jednym rzędzie */
-.layout-bottom{
-  display:grid;
-  grid-template-columns: 1.2fr 1.2fr 1fr;
-  gap: 14px;
-  align-items: stretch;
-}
-
 /* Zdjęcie NIE może rozciągać się w nieskończoność */
 .photo{
   padding:0;
@@ -407,6 +390,7 @@ body{ overflow-x:hidden; }
     text-align:center;
   }
 }
+
 
 
 
