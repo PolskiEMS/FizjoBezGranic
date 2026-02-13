@@ -308,7 +308,106 @@ padding: 4px 12px; border-radius: 999px; background: rgba(255,255,255,.06); }
   h1{ font-size: 32px; }
   .photo{ min-height: 220px; }
 }
-@media (max-width: 980px){ ... }   /* tablet/telefon */
-@media (max-width: 520px){ ... }   /* mały telefon */
+/* ===== RESPONSYWNOŚĆ pod FizjoBezGranic (Twoje klasy z HTML) ===== */
+
+*{ box-sizing:border-box; }
+img{ max-width:100%; height:auto; display:block; }
+body{ overflow-x:hidden; }
+
+/* kontener */
+.wrap{
+  width: min(1120px, calc(100% - 32px));
+  margin: 40px auto;
+}
+
+/* grid główny (desktop) */
+.layout{
+  display:grid;
+  gap: 16px;
+  align-items:start;
+
+  grid-template-columns: 1.55fr 1fr;
+  grid-template-areas:
+    "intro  photo"
+    "zakres podejscie"
+    "cta    cta";
+}
+
+/* przypisanie elementów do pól */
+.intro{ grid-area:intro; }
+.photo{ grid-area:photo; }
+.zakres{ grid-area:zakres; }
+.podejscie{ grid-area:podejscie; }
+.cta{ grid-area:cta; }
+
+/* zdjęcie */
+.photo{
+  overflow:hidden;
+  border-radius: 28px;
+  min-height: 360px;
+  max-height: 420px;
+}
+.photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position: 50% 20%;
+}
+
+/* CTA – w rzędzie na desktop */
+.cta{
+  display:flex;
+  justify-content:center;
+  gap: 14px;
+  flex-wrap:wrap;
+}
+
+/* ===== tablet/telefon ===== */
+@media (max-width: 980px){
+  .wrap{ margin: 22px auto; }
+  .card{ padding: 22px; }
+
+  .layout{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "intro"
+      "photo"
+      "zakres"
+      "podejscie"
+      "cta";
+  }
+
+  .photo{ min-height: 240px; max-height: 320px; }
+
+  .intro h1{ font-size: 32px; }
+}
+
+/* ===== mały telefon ===== */
+@media (max-width: 520px){
+  .card{ padding: 18px; }
+
+  .top{
+    gap: 12px;
+    align-items:flex-start;
+  }
+
+  .logo{
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+  }
+
+  .photo{ min-height: 220px; max-height: 280px; }
+
+  .cta{ flex-direction: column; }
+  .btn{ width:100%; min-width:0; }
+
+  footer.foot{
+    justify-content:center;
+    text-align:center;
+  }
+}
+
+
 
 
