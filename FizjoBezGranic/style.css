@@ -348,6 +348,11 @@ body{ overflow-x:hidden; }
 
   .photo{ min-height: 240px; max-height: 320px; }
 
+  .photo img{
+    object-position: 50% 5%;
+    transform: scale(1.02);
+  }
+
   .intro h1{ font-size: 32px; }
 }
 
@@ -366,11 +371,14 @@ body{ overflow-x:hidden; }
     object-fit: contain;
   }
 
-  .photo{ min-height: 220px; max-height: 280px; }
+  .photo{ 
+    min-height: 260px; 
+    max-height: 320px; 
+  }
   
   .photo img{
     object-position: 50% 0%;
-    transform: scale(1.0);
+    transform: scale(1.00);
   }
 
   .cta{ flex-direction: column; }
@@ -381,6 +389,7 @@ body{ overflow-x:hidden; }
     text-align:center;
   }
 }
+
 
 
 
