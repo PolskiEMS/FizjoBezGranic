@@ -67,12 +67,6 @@ body{
   font-weight:800;
 }
 
-.wrap{
-  max-width:var(--max);
-  margin:0 auto;
-  padding: 6vh var(--pad);
-}
-
 .card{
   position: relative;
   overflow: hidden;
@@ -283,12 +277,6 @@ footer.foot{
 .city{ color: rgba(255,255,255,.70); font-weight:700;
 padding: 4px 12px; border-radius: 999px; background: rgba(255,255,255,.06); }
 
-/* RESPONSYWNOŚĆ */
-@media (max-width: 980px){
-  .photo{ max-height: 260px; }
-  h1{ font-size: 32px; }
-  .photo{ min-height: 220px; }
-}
 /* ===== RESPONSYWNOŚĆ pod FizjoBezGranic (Twoje klasy z HTML) ===== */
 
 *{ box-sizing:border-box; }
@@ -388,6 +376,7 @@ body{ overflow-x:hidden; }
     text-align:center;
   }
 }
+
 
 
 
