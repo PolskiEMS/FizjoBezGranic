@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FizjoBezGranic – wizytówka</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <section class="card">
+
+      <!-- 7. Pasek górny: opinie / o mnie -->
+      <nav class="top-nav">
+        <a href="opinie.html">Opinie</a>
+        <a href="o-mnie.html">O mnie</a>
+      </nav>
+
+      <div class="layout">
+
+        <!-- 1. Logo + nazwa + opis -->
+        <div class="block intro">
+          <div class="top">
+            <img class="logo" src="LogoBezGranic.jpg" alt="Logo FizjoBezGranic" />
+            <div>
+              <h1>FizjoBezGranic</h1>
+              <div class="sub">Krzysztof Wojciechowski • Fizjoterapia</div>
+            </div>
+          </div>
+
+          <div class="desc">
+            <p>Do mojego gabinetu często trafiają osoby, które mówią:</p> 
+            <ul>
+              <li>„nie wiem, co z tym zrobić”</li>
+              <li>„byłem już u kilku specjalistów”</li>
+              <li>„wyniki są w porządku, a ja nadal czuję, że coś jest nie tak”</li>
+            </ul>
+            <p>Wiele problemów bólowych i napięciowych nie ma jednej oczywistej przyczyny i bardzo często to nie zawsze tam, gdzie boli, jest prawdziwym źródłem problemu.</p>
+          </div>
+
+        </div>
+
+        
+        <!-- 2. Zdjęcie do wklejenia -->
+        <div class="block photo">
+          <!-- Wstaw swoje zdjęcie: -->
+          <img src="FizjoKris.jpg" alt="Krzysztof Wojciechowski – fizjoterapeuta" />
+          <!-- Jeśli nie masz zdjęcia, zakomentuj IMG i odkomentuj placeholder:
+          <div class="photo-placeholder">Twoje zdjęcie</div>
+          -->
+        </div>
+
+        <!-- 3. Tabela Zakres -->
+        <div class="block mini zakres">
+          <h2>Zakres</h2>
+          <ul>
+            <li>Dolegliwości ortopedyczne (kręgosłup, stawy, mięśnie)</li>
+            <li>Migreny i bóle głowy</li>
+            <li>Przewlekłe napięcia i objawy stresowe</li>
+          </ul>
+        </div>
+
+        <!-- 4. Tabela Podejście -->
+        <div class="block mini podejscie">
+          <h2>Podejście</h2>
+          <ul>
+            <li>Holistyczne spojrzenie na ciało</li>
+            <li>Szukam przyczyny utrzymywania się objawów</li>
+            <li>Terapia dopasowana do stylu życia i obciążeń</li>
+            <li>Manualnie + praca z napięciem + edukacja</li>
+          </ul>
+        </div>
+
+        <!-- 5. Zamiast tabeli kontakt: przyciski -->
+        <div class="block cta">
+          <a class="btn" href="tel:+48000000000">Zadzwoń</a>
+          <a class="btn" href="mailto:kontakt@fizjobezgranic.pl">Napisz mail</a>
+          <a class="btn" href="https://www.instagram.com/krzysztof.fizjobezgranic/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Stopka wizytówki + miasto -->
+      <footer class="foot">
+        <div>© <span id="y"></span> FizjoBezGranic</div>
+        <div class="city">Błonie / Milanówek</div>
+        <div>Wizytówka • 1 strona</div>
+      </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
