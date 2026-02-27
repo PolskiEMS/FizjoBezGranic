@@ -319,24 +319,31 @@
 
 /* Siatka opinii (zdjęcia) */
 .opinie-grid{
-  display:grid;
+  display: flex;
+  flex-direction: column;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+  margin-top: 30px;
 }
 
 .opinia-item{
-  display:block;
-  border-radius: var(--r);
-  overflow:hidden;
+  display: block;
+  border-radius: 22px;;
+  overflow: hidden;
   border: 1px solid rgba(255,255,255,.10);
   background: rgba(255,255,255,.05);
+  transition: transform .2s ease;
 }
 
-.opinia-item img{
-  width:100%;
-  height: 260px;
-  object-fit: cover;
-  display:block;
+.opinia-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  display: block;
+}
+
+.opinia-item:hover {
+  transform: translateY(-4px);
 }
 
 /* ===== MOBILE: większa czytelność i mniej pustej przestrzeni ===== */
@@ -374,3 +381,4 @@
     h1{ font-size: 32px; }
     .photo{ min-height: 220px; }
   }
+
