@@ -349,6 +349,12 @@ opinie-list{
   transform: translateY(-4px);
 }
 
+.icon{
+  width:18px;
+  height:18px;
+  margin-right:10px;
+}
+
 /* ===== MOBILE: większa czytelność i mniej pustej przestrzeni ===== */
 @media (max-width: 520px){
   .wrap{
@@ -384,6 +390,7 @@ opinie-list{
     h1{ font-size: 32px; }
     .photo{ min-height: 220px; }
   }
+
 
 
 
